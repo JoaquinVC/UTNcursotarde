@@ -4,15 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
     <title>UTN BUENAS TARDES</title>
 </head>
 <body>
-    <h1>Buenas, todo bien? 
-    que tal todo?<!-- esto es un comentario, no lo ve el usuario -->
-    </h1>
-</body>
-<h2>hello humans
+    <nav>
+        <a href="./pages/productos.html">Productos</a>
+    </nav>
 
-    <u>what is this?</u>
-</h2>
+    <main>
+
+        <h1>Proyecto 02 - Listas / Formularios / Tablas / CSS</h1>
+    <hr>
+        <h2>Lista desordenada</h2>
+        <!-- lista desordenada -->
+        <ul>
+            <li>Café</li>
+            <li>Azucar</li>
+            <li>Leche</li>
+        </ul>
+    <hr>
+        <h2>Lista ordenada</h2>
+        <!-- lista ordenada -->
+        <ol>
+            <li>Lavar el auto</li>
+            <li>Salir a pasear</li>
+            <li>Cargar combustible</li>
+        </ol>
+    <hr>
+        <h2>Lista de definicion</h2>
+        <!-- listas de definiciones -->
+        <dl>
+            <dt>Argentina</dt>
+            <dd>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ea eum dignissimos voluptates repellendus! Hic, voluptatibus deserunt aliquam asperiores dolores accusamus maiores. Ducimus officiis obcaecati ex amet a eius molestias.</p>
+        </dd>
+        <dt>Brasil</dt>
+        <dd>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur iste et recusandae. Adipisci repellat dolore eos et cum, asperiores sit voluptate quidem sint accusamus iste, consequatur velit accusantium est.</p>
+        </dd>
+        </dl>
+    <hr>
+        <h2>Formularios</h2>
+        <!-- form action="/datos" method="post" -->
+        <form id="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+        <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" minlength="4" maxlength="30">
+        <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autofocus>
+        <br>
+            <label for="edad">Edad</label>
+            <input type="numer" name="edad" min="10" max="100">
+        <br>
+            <label for="fecha">Fecha</label>
+            <input type="date" min="1950-01-01" max="2023-05-30">
+        <br>
+            <label for="password">Password</label>
+            <input type="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
+        <br>
+            <label for="password">Repita el password:</label>
+            <input type="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g">
+        <br>
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia"
+                <optgroup>
+                    <option value="CABA">CABA</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                </optgroup>
+            </select>
+        <br>
+            <label for="genero">Genero</label>
+            <div>
+                <input type="radio" name="genero" value="femenino"> Femenino
+                <input type="radio" name="genero" value="masculino"> Masculino
+                <input type="radio" name="genero" value="otro"> Otro
+            </div>
+        <br>
+            <label for="aceptar">Acepto los terminos del envio</label>
+            <input type="checkbox" name="aceptar" value="Acepto">
+        <br>
+            <label for="comentarios">Comentarios</label>
+        <br>
+            <textarea name="cometario" id="comentario" cols="25" rows="10"></textarea>
+            <div>
+                <input type="submit" value="Enviar datos">
+            </div>
+
+        </form>
+    
+    </main>
+    
+    <footer> 
+        <address> 
+            <p>San Martin 250</p>
+        </address>
+    </footer>
+</body>
 </html>
